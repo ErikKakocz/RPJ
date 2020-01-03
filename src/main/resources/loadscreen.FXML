@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.HBox?>
+
+<GridPane fx:controller="controllers.LoadSceneController" xmlns:fx="http://javafx.com/fxml" alignment="center" vgap="10" hgap="10">
+    <ListView fx:id="storyList" GridPane.rowIndex="1" GridPane.columnIndex="1" onMouseClicked="#updateDescription"/>
+    <TextField fx:id="storyDescription" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+    <HBox GridPane.rowIndex="2" GridPane.columnIndex="2" spacing="10">
+        <Button fx:id="startButton" text="start"  onAction="#handleStartButton"/>
+        <Button fx:id="backButton" text="back" onAction="#handleBackButton"/>
+    </HBox>
+</GridPane>

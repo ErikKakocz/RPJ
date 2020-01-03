@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:controller="controllers.MainSceneController" xmlns:fx="http://javafx.com/fxml" alignment="center" vgap="10">
+    <Button fx:id="playButton" text="play" GridPane.rowIndex="1" onAction="#handlePlayButton"/>
+    <Button fx:id="quitButton" text="quit" GridPane.rowIndex="2" onAction="#handleQuitButton"/>
+</GridPane>
